@@ -27,4 +27,5 @@ if [[ $? -ne 0 ]]; then
 fi
 
 echo "Installation completed successfully! You can now run 'mcmanager'."
+mcmanager
 exit 0
