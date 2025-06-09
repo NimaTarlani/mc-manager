@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GITHUB_URL=""
+GITHUB_URL="https://raw.githubusercontent.com/NimaTarlani/mc-manager/main/mcmanager.sh"
 INSTALL_PATH="/usr/local/bin/mcmanager"
 
 
