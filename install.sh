@@ -59,6 +59,6 @@ if [[ $? -ne 0 ]]; then
     exit 1
 fi
 
-echo "Installation completed successfully! You can now run 'mcmanager'."
+echo "Installation completed successfully! You can now run 'mc-manager'."
 mc-manager
 exit 0
