@@ -43,22 +43,22 @@ fi
 echo "All required dependencies are installed."
 
 echo "Downloading mc-manager.sh from $GITHUB_URL..."
-curl -o mcmanager.sh "$GITHUB_URL"
+curl -o mc-manager.sh "$GITHUB_URL"
 if [[ $? -ne 0 ]]; then
     echo "Failed to download the file." >&2
     exit 1
 fi
 
 echo "Setting file permissions..."
-chmod +x mcmanager.sh
+chmod +x mc-manager.sh
 
 echo "Installing mc-manager as a Linux command..."
-mv mcmanager.sh "$INSTALL_PATH"
+mv mc-manager.sh "$INSTALL_PATH"
 if [[ $? -ne 0 ]]; then
     echo "Failed to move the file to $INSTALL_PATH." >&2
     exit 1
 fi
 
 echo "Installation completed successfully! You can now run 'mcmanager'."
-mcmanager
+mc-manager
 exit 0
